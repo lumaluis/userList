@@ -1,0 +1,18 @@
+body {
+  background-color: #ededed;
+
+}
+
+.img-logo {
+  width: 80%;
+}
+.welcome-message {
+  margin-bottom: 0;
+}
+.welcome-row {
+  margin-bottom: 15px;
+}
+.img-input {
+  width: 24px;
+  height: 24px;
+}
