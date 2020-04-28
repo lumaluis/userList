@@ -1,0 +1,68 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>User List Log In</title>
+    <meta name="description" content="User List Log In">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-s">
+          <form id="login_form">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-xl">
+                  <img class="img-loo" src="assets/images/Logo.svg">
+                </div>
+              </div>
+              <div class="row welcome-row">
+                <div class="col-lg">
+                  <h3 class="welcome-message" >Welcome to the Learning Management System</h3>
+                  <small>Please log in to continue</small>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <img class="img-input" src="assets/images/user.svg">
+                  </div>
+                </div>
+                <input placeholder="Username" type="text" class="form-control" id="username" name="username">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <img class="img-input" src="assets/images/password.svg">
+                  </div>
+                </div>
+              <input placeholder="Password" type="password" class="form-control" id="password" name="password">
+              </div>
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" checked="checked" class="form-check-input" id="remember" name="remember">
+              <label class="form-check-label" for="remember">Remember me</label>
+            </div>
+            <input type="submit" class="btn btn-primary btn-block" value="Log In">
+            <br/>
+            <div id="show_message" class="alert alert-danger alert-dismissible fade" role="alert">
+              <div id="error_message">Error</div>
+              <button type="button" class="close" onclick="showErrorMessage(false,'')" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>User List</title>
+    <meta name="description" content="User List">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-s">
+          <h2>User List</h2>
+        </div>
+      </div>
+      <div class="row">
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Username/Name</th>
+              <th scope="col">Group</th>
+            </tr>
+          </thead>
+          <tbody id="users_body">
+          </tbody>
+        </table>
+      </div>
+      <div class="row justify-content-md-center">
+        <div class="col-s">
+          <nav aria-label="Page navigation example" class="justify-content-md-center">
+            <ul class="pagination" id="pagination_html">
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div>
+        <nav class="navbar fixed-bottom navbar-dark bg-dark justify-content-end">
+          <input class="btn btn-secondary" type="button" value="Log out" onclick="logout()">
+        </nav>
+      </div>
+    </div>
+    <script src="users.js"></script>
+  </body>
+</html>
