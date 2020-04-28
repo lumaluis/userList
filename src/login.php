@@ -21,13 +21,15 @@ if (!isset($_SESSION['logged'])) {
         $stmt->bind_result($id, $password);
         $stmt->fetch();
         if ($_POST['password'] === $password) {
-          if($_POST['remember']) {
-            session_regenerate_id();
-            $_SESSION['logged'] = TRUE;
-            $_SESSION['name'] = $_POST['username'];
-            $_SESSION['id'] = $id;
+          echo $_POST['remember'];
+          session_regenerate_id();
+          $_SESSION['logged'] = TRUE;
+          $_SESSION['name'] = $_POST['username'];
+          $_SESSION['id'] = $id;
+          if($_POST['remember'] === 'false') {
+            // TODO: Something to make the cookie not persistent
           }
-          echo 'ok';
+          echo 'o44k';
         } else {
           echo 'Incorrect password!';
         }
