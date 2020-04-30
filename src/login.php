@@ -29,7 +29,7 @@ if (!isset($_SESSION['logged'])) {
           if($_POST['remember'] === 'false') {
             // TODO: Something to make the cookie not persistent
           }
-          echo 'o44k';
+          echo 'ok';
         } else {
           echo 'Incorrect password!';
         }
